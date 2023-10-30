@@ -1,1 +1,1 @@
-# Explainable-Diabetic-Retinopathy-Detection-and-Retinal-Image-Generation
+# Pathology Visual Question Answering (VQA)
