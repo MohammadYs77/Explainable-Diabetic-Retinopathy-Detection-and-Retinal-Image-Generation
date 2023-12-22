@@ -12,4 +12,5 @@ The dataset creation process prioritizes the anonymity and confidentiality of me
 
 ## Dataset Release 
 The PATHVQA dataset is publicly released to contribute to research in medical visual question answering. It aims to support the academic community in fostering advancements in AI-driven clinical decision support and medical education.
+Link : https://paperswithcode.com/paper/pathvqa-30000-questions-for-medical-visual
 
