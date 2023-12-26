@@ -39,6 +39,30 @@ Additionally, make sure you have Jupyter Notebook installed:
 !pip install jupyter
  ```
 
+## Training
+
+To train the model, use the provided `train_model` function in your Jupyter Notebook. The function takes the following parameters:
+
+- `model`: The neural network model you want to train.
+- `criterion`: The loss function, in this case, it's `nn.CrossEntropyLoss`.
+- `optimizer`: The optimization algorithm, in this case, it's stochastic gradient descent (SGD).
+- `num_epochs`: The number of epochs for training.
+
+Here's an example of how to use the function:
+
+```python
+# Import necessary libraries
+# Define your model, criterion, and optimizer
+torch.manual_seed(42)
+model = VQAModel(input_representation_shape=512, txt_embedd_dim=EMBEDDING_DIM, num_classes=num_classes).to(device)
+criterion = nn.CrossEntropyLoss()
+optimizer = torch.optim.SGD(params=model.parameters(), lr=0.1, momentum=0.9)
+
+# Train the model for one epoch
+num_epochs = 1
+model_trained = train_model(model, criterion, optimizer, num_epochs=num_epochs)
+
+
 
 
 
