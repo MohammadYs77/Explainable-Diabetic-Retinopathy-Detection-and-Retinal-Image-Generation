@@ -26,6 +26,7 @@ You can install these dependencies using the following command:
 pip install pillow numpy pandas nltk tqdm matplotlib torch torchtext torchvision
 
 
+
 ## Key features 
 ### Size: 
 Comprising 4,998 pathology images from freely accessible textbooks and online libraries.
