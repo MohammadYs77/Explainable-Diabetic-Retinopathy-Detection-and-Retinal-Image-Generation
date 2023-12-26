@@ -61,7 +61,7 @@ optimizer = torch.optim.SGD(params=model.parameters(), lr=0.1, momentum=0.9)
 # Train the model for one epoch
 num_epochs = 1
 model_trained = train_model(model, criterion, optimizer, num_epochs=num_epochs)
-
+```
 ## Evaluation
 
 To evaluate the trained model on a test set and calculate the F1 score, use the following code in your Jupyter Notebook:
@@ -96,7 +96,7 @@ with tqdm(dataloaders['test'], unit='batch', position=0, leave=True) as pbar:
 # Calculate the overall F1 score
 overall_f1_score = np.mean(np.array(f1_scores))
 print('Overall F1 Score: {:.4f}'.format(overall_f1_score))
-
+```
 
 
 
