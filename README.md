@@ -49,6 +49,7 @@ To train the model, use the provided `train_model` function in your Jupyter Note
 - `num_epochs`: The number of epochs for training.
 
 Here's an example of how to use the function:
+1. **Load the previous cells :**
 
 ```python
 # Import necessary libraries
@@ -65,6 +66,8 @@ model_trained = train_model(model, criterion, optimizer, num_epochs=num_epochs)
 ## Evaluation
 
 To evaluate the trained model on a test set and calculate the F1 score, use the following code in your Jupyter Notebook:
+
+1. **Load Trained Model:**
 
 ```python
 # Import necessary libraries
