@@ -32,11 +32,12 @@ You can install these dependencies using the following command:
 
 ```bash
 pip install pillow numpy pandas nltk tqdm matplotlib torch torchtext torchvision
-```bash
+```
 
 Additionally, make sure you have Jupyter Notebook installed:
 ```bash
 !pip install jupyter
+ ```
 
 
 
