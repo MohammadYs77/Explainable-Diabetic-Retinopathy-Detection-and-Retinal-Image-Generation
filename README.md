@@ -62,6 +62,42 @@ optimizer = torch.optim.SGD(params=model.parameters(), lr=0.1, momentum=0.9)
 num_epochs = 1
 model_trained = train_model(model, criterion, optimizer, num_epochs=num_epochs)
 
+## Evaluation
+
+To evaluate the trained model on a test set and calculate the F1 score, use the following code in your Jupyter Notebook:
+
+```python
+# Import necessary libraries
+# Set the model to evaluation mode
+model_trained.eval()
+
+# Initialize an empty list to store F1 scores
+f1_scores = []
+
+# Use the model to make predictions on the test set
+with tqdm(dataloaders['test'], unit='batch', position=0, leave=True) as pbar:
+    for X, y, z in pbar:
+        pbar.set_description("Evaluating")
+
+        X = X.to(device)
+        y = y.to(device)
+        z = z.to(device)
+
+        # Forward pass
+        outputs = model_trained(X, y)
+        _, preds = torch.max(outputs, 1)
+
+        # Calculate F1 score and append to the list
+        f1_scores.append(f1_score(np.array(z.cpu()), np.array(preds.cpu()), average='micro'))
+
+        pbar.set_postfix(F1_Score=np.mean(np.array(f1_scores)))
+        sleep(0.1)
+
+# Calculate the overall F1 score
+overall_f1_score = np.mean(np.array(f1_scores))
+print('Overall F1 Score: {:.4f}'.format(overall_f1_score))
+
+
 
 
 
