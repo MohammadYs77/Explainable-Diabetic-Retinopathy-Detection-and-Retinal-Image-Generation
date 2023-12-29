@@ -2,7 +2,7 @@
 
 ## Overview
 
-PATHVQA is a specialized dataset tailored for training and evaluating AI models in pathology visual question answering (VQA). With a focus on overcoming challenges in medical dataset creation, PATHVQA is designed to enhance AI applications for pathology. The PATHVQA dataset is publicly released to contribute to research in medical visual question answering. It aims to support the academic community in fostering advancements in AI-driven clinical decision support and medical education.
+PATHVQA is a specialized dataset tailored for training and evaluating AI models in pathology visual question answering (VQA). With a focus on overcoming challenges in medical dataset creation, PATHVQA is designed to enhance AI applications for pathology. The PATHVQA dataset is publicly released to contribute to research in medical visual question answering. It aims to support the academic community in fostering advancements in AI-driven clinical decision support and medical education. This project, specifically aims to implement the Stacked Attention Layer (SAN) approach of the paper "**PATHVQA: 30000+ QUESTIONS FOR MEDICAL VISUAL QUESTION ANSWERING**" which achived the accuracy of 50.1% over "Yes and No" questions which is comparable to 60.1% of the main implementation and F1-score of 22.76% which is superior compared to 19.8% of the main implementation.  
 
 ## Key features 
 ### Size: 
